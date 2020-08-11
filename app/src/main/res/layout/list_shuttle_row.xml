@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8eaea"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutShuttle"
+        android:layout_width="394dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutShuttle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="7dp">
+
+            <TextView
+                android:id="@+id/shuttlePassengersNames_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/shuttlePassengersNames"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/shuttlePassengersNamesInHebMsg_tv2"
+                app:layout_constraintStart_toEndOf="@+id/shuttlePassengersNamesInHebMsg_tv2"
+                app:layout_constraintTop_toTopOf="@+id/shuttlePassengersNamesInHebMsg_tv2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/shuttleDate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/shuttleDate"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/shuttlePriceIncludeTax_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="@string/shuttlePrice"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewShttulePriceIncludeTaxMsg"
+                app:layout_constraintTop_toBottomOf="@+id/shuttlePassengersNames_tv"
+                app:layout_constraintVertical_bias="0.465" />
+
+            <TextView
+                android:id="@+id/shuttleNumber_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/shuttleNumber"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewShttulePriceIncludeTaxMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:gravity="center"
+                android:text="@string/Price_Include_Tax"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/shuttlePriceIncludeTax_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/shuttlePriceIncludeTax_tv" />
+
+            <TextView
+                android:id="@+id/shuttleDriverNameInHeb_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Driver_Name_InHeb"
+                app:layout_constraintBottom_toBottomOf="@+id/shuttleDriverNameInHebMsg_tv"
+                app:layout_constraintStart_toStartOf="@+id/shuttlePassengersNames_tv"
+                app:layout_constraintTop_toTopOf="@+id/shuttleDriverNameInHebMsg_tv"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/shuttleDriverNameInHebMsg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/shattelsDriverNaame"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shuttleDate_tv" />
+
+            <TextView
+                android:id="@+id/shuttlePassengersNamesInHebMsg_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/shuttlePassengersNames"
+                app:layout_constraintStart_toStartOf="@+id/shuttleDriverNameInHebMsg_tv"
+                app:layout_constraintTop_toBottomOf="@+id/shuttleDriverNameInHebMsg_tv" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

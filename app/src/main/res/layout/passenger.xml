@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/passengerLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3">
+
+    <!--    <android.support.v7.widget.CardView-->
+    <!--        android:id="@+id/idCardView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="5dp"-->
+    <!--        app:cardCornerRadius="4dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/placeName"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/add_passenger_address_et"-->
+    <!--        tools:layout_editor_absoluteX="8dp">-->
+
+    <!--        <fragment-->
+    <!--            android:id="@+id/place_autocomplete_fragment"-->
+    <!--            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
+    <!--    </android.support.v7.widget.CardView>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/placeName"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:text="No Place selected"-->
+    <!--        android:textSize="20dp"-->
+    <!--        app:layout_constraintHorizontal_bias="0.534"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/add_passenger_address_et" />-->
+
+    <TextView
+        android:id="@+id/add_passenger_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Phone_Number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/add_passenger_heb_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/add_passenger_heb_name_tv" />
+
+    <EditText
+        android:id="@+id/add_passenger_address_et"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/add_passenger_address_tv"
+        app:layout_constraintEnd_toEndOf="@+id/add_passenger_phone_et"
+        app:layout_constraintTop_toTopOf="@+id/add_passenger_address_tv" />
+
+    <EditText
+        android:id="@+id/add_passenger_phone_et"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/add_passenger_phone_tv"
+        app:layout_constraintEnd_toEndOf="@+id/add_passenger_heb_name_et"
+        app:layout_constraintTop_toTopOf="@+id/add_passenger_phone_tv" />
+
+    <TextView
+        android:id="@+id/add_passenger_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Address"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/add_passenger_phone_tv"
+        app:layout_constraintTop_toBottomOf="@+id/add_passenger_phone_tv" />
+
+    <TextView
+        android:id="@+id/add_passenger_heb_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Name__hebrew"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/add_passenger_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/add_passenger_name_tv" />
+
+    <TextView
+        android:id="@+id/add_passenger_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_passenger_name_et"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/add_passenger_name_tv"
+        app:layout_constraintEnd_toEndOf="@+id/add_passenger_heb_name_et"
+        app:layout_constraintTop_toTopOf="@+id/add_passenger_name_tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/add_passenger_heb_name_et"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/add_passenger_heb_name_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_passenger_heb_name_tv" />
+
+    <Button
+        android:id="@+id/btn_addPassenger"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_passenger_address_et" />
+
+    <Button
+        android:id="@+id/btn_deletePassenger"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:text="@string/delete"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/btn_addPassenger"
+        app:layout_constraintStart_toStartOf="@+id/btn_addPassenger"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addPassenger" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_user_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Phone_Number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/add_user_heb_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/add_user_heb_name_tv" />
+
+    <EditText
+        android:id="@+id/adduser_pass_et"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/add_user_pass_tv"
+        app:layout_constraintEnd_toEndOf="@+id/adduser_phone_et"
+        app:layout_constraintTop_toTopOf="@+id/add_user_pass_tv" />
+
+    <EditText
+        android:id="@+id/adduser_phone_et"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/add_user_phone_tv"
+        app:layout_constraintEnd_toEndOf="@+id/adduser_heb_name_et"
+        app:layout_constraintTop_toTopOf="@+id/add_user_phone_tv" />
+
+    <TextView
+        android:id="@+id/add_user_pass_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Password"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/add_user_phone_tv"
+        app:layout_constraintTop_toBottomOf="@+id/add_user_phone_tv" />
+
+    <TextView
+        android:id="@+id/add_user_heb_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Name__hebrew"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/add_user_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/adduser_name_et" />
+
+    <TextView
+        android:id="@+id/add_user_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/adduser_name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/add_user_name_tv"
+        app:layout_constraintEnd_toEndOf="@+id/adduser_heb_name_et"
+        app:layout_constraintTop_toTopOf="@+id/add_user_name_tv" />
+
+    <EditText
+        android:id="@+id/adduser_heb_name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/add_user_heb_name_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_user_heb_name_tv" />
+
+    <Switch
+        android:id="@+id/admin_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:checked="false"
+        android:text="@string/admin_Permission"
+        android:textOff="@string/No"
+        android:textOn="@string/Yes"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/add_user_pass_tv"
+        app:layout_constraintTop_toBottomOf="@+id/add_user_pass_tv" />
+
+    <Button
+        android:id="@+id/btn_addUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_switch" />
+
+    <Button
+        android:id="@+id/btn_deleteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:text="@string/delete"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/btn_addUser"
+        app:layout_constraintStart_toStartOf="@+id/btn_addUser"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

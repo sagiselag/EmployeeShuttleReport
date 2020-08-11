@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shuttlePrice">מחיר נסיעה</string>
+    <string name="admin_Permission">הרשאות מנהל</string>
+    <string name="Address">כתובת </string>
+    <string name="Admin">קיימת הרשאת מנהל : </string>
+    <string name="Create_Shuttle">צור נסיעה</string>
+    <string name="Driver_Name_InHeb">שם הנהג</string>
+    <string name="First_passenger">נוסע ראשון</string>
+    <string name="Fourth_passenger">נוסע רביעי</string>
+    <string name="Login">התחבר</string>
+    <string name="Name">שם (באנגלית)</string>
+    <string name="Name__hebrew">שם</string>
+    <string name="New_Shuttle">נסיעה חדשה</string>
+    <string name="No">לא</string>
+    <string name="Password">סיסמא</string>
+    <string name="Phone_Number">מספר טלפון</string>
+    <string name="Price_Include_Tax">מחיר</string>
+    <string name="Second_passenger">נוסע שני</string>
+    <string name="Select_Shuttle_Passengers">"בחר את הנוסעים"</string>
+    <string name="Third_passenger">נוסע שלישי</string>
+    <string name="Username">שם משתמש</string>
+    <string name="ADD">הוספה</string>
+    <string name="Admin_Menu">תפריט מנהל</string>
+    <string name="Passenger_Management">ניהול נוסעים</string>
+    <string name="User_Management">ניהול משתמשים</string>
+    <string name="Yes">כן</string>
+    <string name="add_passenger">הוספת נוסע</string>
+    <string name="add_user">הוספת משתמש</string>
+    <string name="delete">מחק</string>
+    <string name="monthly_Shuttle_Report">דו\"ח נסיעות חודשי</string>
+    <string name="my_monthly_shuttles">הנסיעות החודשיות שלי</string>
+    <string name="nameInEnglish">שם (באנגלית)</string>
+    <string name="nameInHebrew">שם (בעברית)</string>
+    <string name="passengerNameInEnglish">שם הנוסע (באנגלית)</string>
+    <string name="passengerNameInHebrew">שם הנוסע</string>
+    <string name="passengerPhoneNumber">"מספר טלפון של הנוסע "</string>
+    <string name="passengers">שמות הנוסעים</string>
+    <string name="phoneNumber">מספר טלפון</string>
+    <string name="shuttleDate">תאריך הנסיעה</string>
+    <string name="shuttleNumber">מספר נסיעה</string>
+    <string name="shuttlePassengersNames">"שמות הנוסעים"</string>
+    <string name="amount">כמות</string>
+    <string name="Waiting_Time_inMin">זמן המתנה (דקות)</string>
+    <string name="Verifying_user_information">"אימות פרטי המשתמש "</string>
+    <string name="Total_for_the_current_period">סה\"כ לתקופה הנוכחית</string>
+    <string name="app_name">Employee Shuttle Report</string>
+    <string name="shattelsDriverNaame">שם הנהג</string>
+    <string name="PassengersName">שמות הנוסעים</string>
+    <string name="textPersonName">הכנס שם</string>
+    <string name="Update">עדכון</string>
+
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+
+
+</resources>

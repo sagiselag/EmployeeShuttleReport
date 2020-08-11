@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_header_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewLoginUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:baselineAligned="false"
+        android:text="@string/Username"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+        android:id="@+id/editTextUsernameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:ems="10"
+        android:hint="@string/Phone_Number"
+        android:inputType="textPersonName|phone"
+        android:maxLength="10"
+        android:phoneNumber="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLoginUsername"
+        app:layout_constraintStart_toEndOf="@+id/textViewLoginUsername"
+        app:layout_constraintTop_toTopOf="@+id/textViewLoginUsername" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Password"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewLoginUsername"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginUsername" />
+
+    <EditText
+        android:id="@+id/editTextPasswordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none|textPassword"
+        android:password="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextUsernameInput"
+        app:layout_constraintTop_toTopOf="@+id/textViewPassword" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:background="@drawable/solid_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="103dp"
+            android:layout_height="15dp"
+            android:background="#00F6CE2E"
+            android:outlineAmbientShadowColor="#00F6CE2E"
+            android:text="@string/Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.677" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="275dp"
+            android:layout_height="316dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/taxi" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

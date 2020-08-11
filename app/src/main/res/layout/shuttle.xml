@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3">
+
+    <TextView
+        android:id="@+id/fourthShuttlePassenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Fourth_passenger"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/thirdShuttlePassenger_tv"
+        app:layout_constraintTop_toBottomOf="@+id/thirdShuttlePassenger_tv" />
+
+    <TextView
+        android:id="@+id/fourShuttlePassenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fourthShuttlePassenger_tv"
+        app:layout_constraintStart_toStartOf="@+id/threeShuttlePassenger_tv"
+        app:layout_constraintTop_toTopOf="@+id/fourthShuttlePassenger_tv" />
+
+    <TextView
+        android:id="@+id/thirdShuttlePassenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Third_passenger"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/secondShuttlePassenger_tv"
+        app:layout_constraintTop_toBottomOf="@+id/secondShuttlePassenger_tv" />
+
+    <TextView
+        android:id="@+id/threeShuttlePassenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdShuttlePassenger_tv"
+        app:layout_constraintStart_toStartOf="@+id/twoShuttlePassenger_tv"
+        app:layout_constraintTop_toTopOf="@+id/thirdShuttlePassenger_tv" />
+
+    <TextView
+        android:id="@+id/secondShuttlePassenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Second_passenger"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/firstShuttlePassenger_tv"
+        app:layout_constraintTop_toBottomOf="@+id/firstShuttlePassenger_tv" />
+
+    <TextView
+        android:id="@+id/twoShuttlePassenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondShuttlePassenger_tv"
+        app:layout_constraintStart_toStartOf="@+id/oneShuttlePassenger_tv"
+        app:layout_constraintTop_toTopOf="@+id/secondShuttlePassenger_tv" />
+
+    <TextView
+        android:id="@+id/oneShuttlePassenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/select_shuttle_passengers_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/select_shuttle_passengers_btn"
+        android:layout_width="245dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Select_Shuttle_Passengers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthShuttlePassenger_tv" />
+
+    <TextView
+        android:id="@+id/editTextTime"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate" />
+
+    <TextView
+        android:id="@+id/editTextDate"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstShuttlePassenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/First_passenger"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/oneShuttlePassenger_tv"
+        app:layout_constraintStart_toEndOf="@+id/oneShuttlePassenger_tv"
+        app:layout_constraintTop_toTopOf="@+id/oneShuttlePassenger_tv" />
+
+    <Button
+        android:id="@+id/create_shuttle_button"
+        android:layout_width="245dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/Create_Shuttle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/waitingTime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Waiting_Time_inMin"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/create_shuttle_button"
+        app:layout_constraintStart_toStartOf="@+id/select_shuttle_passengers_btn"
+        app:layout_constraintTop_toBottomOf="@+id/select_shuttle_passengers_btn" />
+
+    <EditText
+        android:id="@+id/waitingTime_et"
+        android:layout_width="62dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/waitingTime_tv"
+        app:layout_constraintStart_toEndOf="@+id/waitingTime_tv"
+        app:layout_constraintTop_toTopOf="@+id/waitingTime_tv"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/passengers"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/oneShuttlePassenger_tv"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <string name="app_name">Employee Shuttle Report</string>
+
+    <string name="Verifying_user_information">Verifying user information</string>
+
+    <string name="Username">Username</string>
+
+    <string name="Password">Password</string>
+
+    <string name="Login">Login</string>
+
+    <string name="Phone_Number">Phone Number</string>
+
+    <string name="Name__hebrew">Name (hebrew)</string>
+
+    <string name="Name">Name</string>
+
+    <string name="admin_Permission">Administrator Permission</string>
+
+    <string name="No">No</string>
+
+    <string name="Yes">Yes</string>
+
+    <string name="ADD">ADD</string>
+
+    <string name="delete">delete</string>
+
+    <string name="my_monthly_shuttles">My Monthly Shuttles</string>
+
+    <string name="User_Management">User Management</string>
+
+    <string name="Admin_Menu">Admin Menu</string>
+
+    <string name="Passenger_Management">Passenger Management</string>
+
+    <string name="New_Shuttle">New Shuttle</string>
+
+    <string name="monthly_Shuttle_Report">Monthly Shuttle Report</string>
+
+    <string name="add_passenger">Add Passenger</string>
+
+    <string name="passengerNameInHebrew">Name (In Hebrew)</string>
+
+    <string name="passengerNameInEnglish">Name</string>
+
+    <string name="Address">Address</string>
+
+    <string name="passengerPhoneNumber">Phone Number</string>
+
+    <string name="shuttlePassengersNames">Passengers: </string>
+
+    <string name="shuttleDate">Date</string>
+
+    <string name="shuttlePrice">Price</string>
+
+    <string name="shuttleNumber">Number</string>
+
+    <string name="Price_Include_Tax">Price Include Tax: </string>
+
+    <string name="Driver_Name_InHeb">Driver Name In Heb</string>
+
+    <string name="amount">Amount</string>
+
+    <string name="Total_for_the_current_period">Total for the current period : </string>
+
+    <string name="add_user">Add User</string>
+
+    <string name="phoneNumber">phoneNumber</string>
+
+    <string name="Admin">Admin</string>
+
+    <string name="nameInEnglish">NameInEnglish</string>
+
+    <string name="nameInHebrew">NameInHebrew</string>
+
+    <string name="Fourth_passenger">Fourth Passenger</string>
+
+    <string name="Third_passenger">Third Passenger</string>
+
+    <string name="Second_passenger">Second Passenger</string>
+    \
+    <string name="Select_Shuttle_Passengers">Select Shuttle Passengers</string>
+
+    <string name="First_passenger">First Passenger</string>
+
+    <string name="Create_Shuttle">Create Shuttle</string>
+
+    <string name="Waiting_Time_inMin">Waiting Time (in minutes) : </string>
+
+    <string name="passengers">Passengers : </string>
+
+    <string name="PassengersName"> Passengers Names:</string>
+
+    <string name="shattelsDriverNaame">Driver Name:</string>
+
+    <string name="textPersonName">textPersonName</string>
+
+    <string name="Update">Update</string>
+
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+
+
+</resources>

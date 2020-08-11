@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8eaea"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPassenger"
+        android:layout_width="394dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="7dp">
+
+            <TextView
+                android:id="@+id/passengerNameInHebrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/passengerNameInHebrew"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/passengerNameInHebrewMsg_tv"
+                app:layout_constraintStart_toStartOf="@+id/passengerNameInEnglish"
+                app:layout_constraintTop_toBottomOf="@+id/passengerNameInEnglish" />
+
+            <TextView
+                android:id="@+id/passengerNameInEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:text="@string/passengerNameInEnglish"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/passengerNameInEnglishMsg_tv"
+                app:layout_constraintStart_toEndOf="@+id/passengerPhoneNumberMsg_tv"
+                app:layout_constraintTop_toTopOf="@+id/passengerNameInEnglishMsg_tv" />
+
+            <TextView
+                android:id="@+id/passengerAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:text="@string/Address"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/passengerAddress2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/passengerAddress2" />
+
+            <TextView
+                android:id="@+id/passengerAddress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/Address"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/passengerPhoneNumberMsg_tv"
+                app:layout_constraintTop_toBottomOf="@+id/passengerPhoneNumber" />
+
+            <TextView
+                android:id="@+id/passengerPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/passengerPhoneNumber"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/passengerPhoneNumberMsg_tv"
+                app:layout_constraintStart_toStartOf="@+id/passengerNameInEnglish"
+                app:layout_constraintTop_toBottomOf="@+id/passengerNameInHebrew" />
+
+            <TextView
+                android:id="@+id/passengerNameInEnglishMsg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/passengerNameInEnglish"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/passengerNameInHebrewMsg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/passengerNameInHebrew"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/passengerNameInEnglishMsg_tv"
+                app:layout_constraintTop_toBottomOf="@+id/passengerNameInEnglishMsg_tv" />
+
+            <TextView
+                android:id="@+id/passengerPhoneNumberMsg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/passengerPhoneNumber"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/passengerNameInEnglishMsg_tv"
+                app:layout_constraintTop_toBottomOf="@+id/passengerNameInHebrewMsg_tv" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
